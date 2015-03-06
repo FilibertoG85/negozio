@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "login" => "sessione#new"
+  get "registrati" => "utenti#new"
+  post "sessione/create"
+
   resources :prodotti
 
   resources :utenti
